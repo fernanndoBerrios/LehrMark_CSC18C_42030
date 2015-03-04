@@ -88,7 +88,7 @@ public class MarkSortAnalysis_Time {
     }
     public static void main(String[] args) {
         //Declare variables
-        int size=40000;
+        int size=160000;
         int array[]=fillArray(size);
         //Print the array and the min and max
         //print(array,10);
