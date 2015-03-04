@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Dr. Mark E. Lehr
+ * Date:  February 25th, 2015
+ * Purpose:  Example to Analyze how the Algorithm Scales
  */
 
 package marksortanalysis;
@@ -11,6 +11,7 @@ import java.util.Date;
 
 public class MarkSortAnalysis {
     //Global Static
+    //Operations for additions, equalities and logic comparisons
     static int opeq,oplog,opadd;
 
     //Fill the array with 2 digit numbers
@@ -46,7 +47,7 @@ public class MarkSortAnalysis {
         }
         return amin;
     }
-    //Simplest Sort -> MarkSort
+    //Simplest Sort -> MarkSort 6 lines long
     public static int []markSort(int a[]){
         //Declare and use
         int temp;int nm1=a.length-1;int n=a.length;
@@ -63,7 +64,7 @@ public class MarkSortAnalysis {
         }
         return a;
     }
-      //Simplest Sort -> MarkSort
+    //Analyze the Simplest Sort -> MarkSort
     public static int []mrkSrtA(int a[]){
         //Declare and use
         int temp;int nm1=a.length-1;int n=a.length;
@@ -96,7 +97,8 @@ public class MarkSortAnalysis {
         //Sort the array
         print(mrkSrtA(array),10);
         //Output the efficiency
-        System.out.println("N = "+array.length);
+        System.out.println("Analyze by comparing operations");
+        System.out.println("n = "+array.length);
         System.out.println("nEq = "+opeq);
         System.out.println("nAdd = "+opadd);
         System.out.println("nLog = "+oplog);
