@@ -9,6 +9,12 @@ package recursion;
 
 public class Recursion {
     
+    public static void towers(int nDisk,int src,int spare,int dest){
+        if(nDisk>1)towers(nDisk-1,src,dest,spare);
+        System.out.println("Move -> "+src+" to -> "+dest);
+        if(nDisk>1)towers(nDisk-1,spare,src,dest);
+    }
+    
     public static double rSin(double angle){
         double tol=1e-8;
         if(angle>-tol&&angle<tol)return angle-angle*angle*angle/6;
@@ -75,6 +81,9 @@ public class Recursion {
        System.out.println("\nMy sin("+angle+")="+rSin(angle));
        System.out.println("\nSystem cos("+angle+")="+Math.cos(angle));
        System.out.println("\nMy cos("+angle+")="+rCos(angle));
+       //Output the process for solving the towers of hanoi
+       System.out.println();
+       towers(2,1,2,3);
     }
     
 }
