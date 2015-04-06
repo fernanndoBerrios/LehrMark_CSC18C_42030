@@ -1,7 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+     Example code from the following site 
+     http://www.mkyong.com/java/java-object-sorting-example-comparable-and-comparator/
+     Java Object Sorting Example (Comparable And Comparator)
+     Posted on July 7, 2010 ,     Last modified : August 29, 2012
+     By mkyong
+     Example as a solution to a Student's question
  */
 package applesandoranges;
 
